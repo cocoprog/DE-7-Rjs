@@ -1,24 +1,22 @@
+import { NavLink } from "react-router-dom";
+
 export function NavBar () {
     return(
             <nav className="nav-container">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="index.html">INICIO</a>
+                        <NavLink to={'/'} className="nav-link">HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/modelos.html">Modelos</a>
+                        <NavLink to={'/category/zapato'} className="nav-link">ZAPATOS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/shop.html">SHOP</a>
+                        <NavLink to={'/category/bota'} className="nav-link">BOTAS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/sEspera.html">Sala de Espera</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="html/contacto.html">Contacto</a>
+                        <NavLink to={'contacto'} className="nav-link">CONTACTO</NavLink>
                     </li>
                 </ul>
             </nav>
     )
 }
-
